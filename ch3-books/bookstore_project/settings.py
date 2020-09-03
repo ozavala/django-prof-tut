@@ -163,6 +163,10 @@ AUTHENTICATION_BACKENDS = (
 )
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+"""To use the services of an email provider 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+and then configure  EMAIL_HOST, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_PORT, and EMAIL_USE_TLS based on the instructions from your email provider"""
+
 # django-allauth config
 # login 'remember me' checkbox
 # if true dissapers
