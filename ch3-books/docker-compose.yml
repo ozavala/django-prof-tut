@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   web:
@@ -10,6 +10,9 @@ services:
       - 8000:8000
     depends_on:
       - db
+    environment:
+      - SECRET_KEY=zbsgb1ali%t4k49)f@8x@ek3#u2@5!(98z1+a*jd(f%@$$r311d
+      - DEBUG=1
   db:
     image: postgres:12
     volumes:
